@@ -36,8 +36,8 @@
                 <div><a href="lettings.html">Landlord Information</a></div>
                 <div><a href="tenants.html">Tenant Information</a></div>
                 <div><a href="maintenance.html">Property Maintenance</a></div>
-                <div><a href="https://www.onthemarket.com/agents/branch/pro-property-care-castleford/properties/?let-agreed=true&search-type=to-rent">View Our Properties</a></div>
-                <div><a href="https://www.facebook.com/people/PPC-Lettings/61564231569385/">FaceBook</a></div>
+                <div><a href="www.facebook.com/PPCLetting/">View Our Properties</a></div>
+                <div><a href="www.facebook.com/PPCLetting/">FaceBook</a></div>
                 <div><a href="https://wa.me/447594566793">WhatsApp</a></div>
                 <div class="form-btn">Contact Form</div>
             </section>
@@ -134,34 +134,36 @@
                         <th>
                             <div class="light-blue">
                                 <span>Let Only <br class="showhide1">Service<br><br></span>
-                                <span>No Setup<br>
-                                    £300 Per Tenancy<br><br></span>
+                                <span> <!-- No Setup<br> -->
+                                    £495 Per Tenancy<br><br></span>
                                 <button class="alt-button dark-blue form-btn">Get Started</button>
                             </div>
                         </th>
                         <th>
                             <div class="light-teal">
                                 <span>Rent <br class="showhide2">Collection<br><br></span>
-                                <span>£50 Setup +<br>
-                                    £150 Per Tenancy<br>
-                                    6% Rental Income</span>
+                                <span> <!-- £50 Setup +<br> 
+                                    £150 Per Tenancy<br> -->
+                                    £150 Setup<br>
+                                    8% Rental Income</span>
                                 <button class="alt-button dark-blue form-btn">Get Started</button></a>
                             </div>
                         </th>  
                         <th>
                             <div class="teal">
                                 <span>Full Management<br><br></span>
-                                <span>£50 Setup +<br>
-                                    £150 Per Tenancy<br>
-                                    8% Rental Income</span>
+                                <span> <!-- £50 Setup +<br> 
+                                    £150 Per Tenancy<br> -->
+                                    £150 Setup<br>
+                                    10% Rental Income</span>
                                 <button class="alt-button dark-blue form-btn">Get Started</button>
                             </div>
                         </th>
                         <th>
                             <div class="purple">
                                 <span>Full Management PLUS<br><br class="showhide3"></span>
-                                <span>£50 Setup +<br>
-                                    £150 Per Tenancy<br>
+                                <span> <!-- £50 Setup +<br> -->
+                                    £150 Setup<br>
                                     12% Rental Income</span>
                                 <button class="alt-button dark-blue form-btn">Get Started</button>
                             </div>
@@ -436,10 +438,7 @@
                     <div class="align-c"><a href="https://www.clientmoneyprotect.co.uk/"><img src="images/Logos/logo-cmp.png"></a></div>
                     <div class="align-c"><a href="https://www.theprs.co.uk/"><img src="images/Logos/logo-prs.png"></a></div>
                     <div class="align-c"><a href="https://ico.org.uk/"><img src="images/Logos/logo-ico.png"></a></div>
-                    <div class="align-c"><a href="https://www.onthemarket.com/agents/branch/pro-property-care-castleford/properties/?let-agreed=true&search-type=to-rent"><img src="images/Logos/logo-otm.png"></a></div>
-                    <!-- 
                     <div class="align-c"><a href="https://www.zoopla.co.uk/find-agents/branch/pro-property-care-castleford-161284"><img src="images/Logos/logo-zoopla.png"></a></div>
-                    -->
                     <div class="align-c"><a href="https://www.depositprotection.com/"><img src="images/Logos/logo-dps.png"></a></div>
                 </div>
              </section>  
@@ -452,10 +451,11 @@
                 <div class="form-btn">Contact Form</div>
                </div>
                <div class="align-a">
-                <div><a href="https://www.onthemarket.com/agents/branch/pro-property-care-castleford/properties/?let-agreed=true&search-type=to-rent">Our Properties</a></div>
-                <div><a href="https://www.facebook.com/people/PPC-Lettings/61564231569385/">FaceBook</a></div>
+                <div><a href="www.facebook.com/PPCLetting/">Our Properties</a></div>
+                <div><a href="www.facebook.com/PPCLetting/">FaceBook</a></div>
                 <div><a href="https://wa.me/447594566793">WhatsApp</a></div>
                 <div class="privacy-policy">Privacy Policy</a></div>
+                <div><a href="https://assets.publishing.service.gov.uk/media/69bc04b8f7b1c24d8e23ce60/The_Renters__Rights_Act_Information_Sheet_2026.pdf">Renters’ Rights Act</a></div>
                 </div>
             </section>  
 
@@ -591,9 +591,12 @@
                     <label for="address">First Line of Address (Optional)</label><br>
                     <input type="text" id="address" name="Address" oninvalid="this.setCustomValidity('Please enter a valid address.')"
                     oninput="this.setCustomValidity('')"><br>
-                    <label for="postcode">Postcode (Optional)</label><br>
+                    <label for="postcode" id="postcode-label">Postcode (Optional)</label><br>
                     <input type="text" id="postcode" name="Postcode" oninvalid="this.setCustomValidity('Please enter a valid postcode.')"
-                    oninput="this.setCustomValidity('')"><br><br>
+                    oninput="this.setCustomValidity('')"><br>
+                    <label for="guarantor" class="viewing hide">Can you get a guarantor?</label><br class="viewing hide">
+                    <input type="text" id="guarantor" name="Guarantor" maxlength="9999" oninvalid="this.setCustomValidity('Please enter a valid message')"
+                    oninput="this.setCustomValidity('')" class="viewing hide"></textarea><br class="viewing hide"><br>
                     <label for="additional-people" class="viewing hide">Will there any additional persons living at the property? If so, please state names, ages and relationship</label><br class="viewing hide">
                     <textarea id="additional-people" name="Additional People" maxlength="9999" oninvalid="this.setCustomValidity('Please enter a valid message')"
                     oninput="this.setCustomValidity('')" class="viewing hide"></textarea><br class="viewing hide">
