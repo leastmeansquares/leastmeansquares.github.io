@@ -319,9 +319,9 @@ const formSetup = () => {
         viewing.forEach((e) => e.classList.remove("hide"));
         maintenanceRequest.forEach((e) => e.classList.add("hide"));
         messageLabel.innerText = "Please state any relevant information below which may influence any decision to let the property"
-        message.attributes.required = "";
-        addressFirstLine.attributes.required = "required";
-        addressPostcode.attributes.required = "required";
+        message.required = false;
+        addressFirstLine.required = true;
+        addressPostcode.required = true;
         addressLabel.innerText = "First Line of Address"
         postcodeLabel.innerText = "Postcode"
         viewingRequired.forEach((e) => e.attributes.required = "required");
@@ -331,9 +331,9 @@ const formSetup = () => {
         viewing.forEach((e) => e.classList.add("hide"));
         maintenanceRequest.forEach((e) => e.classList.remove("hide"));
         messageLabel.innerText = "What is the maintenance issue / enquiry?"
-        message.attributes.required = "required";
-        addressFirstLine.attributes.required = "";
-        addressPostcode.attributes.required = "";
+        message.required = true;
+        addressFirstLine.required = false;
+        addressPostcode.required = false;
         addressLabel.innerText = "First Line of Address (Optional)"
         postcodeLabel.innerText = "Postcode (Optional)"
         viewingRequired.forEach((e) => e.attributes.required = "");
@@ -343,9 +343,9 @@ const formSetup = () => {
         viewing.forEach((e) => e.classList.add("hide"));
         maintenanceRequest.forEach((e) => e.classList.add("hide"));
         messageLabel.innerText = "Message"
-        message.attributes.required = "required";
-        addressFirstLine.attributes.required = "";
-        addressPostcode.attributes.required = "";
+        message.required = true;
+        addressFirstLine.required = false;
+        addressPostcode.required = false;
         addressLabel.innerText = "First Line of Address (Optional)"
         postcodeLabel.innerText = "Postcode (Optional)"
         viewingRequired.forEach((e) => e.attributes.required = "");
