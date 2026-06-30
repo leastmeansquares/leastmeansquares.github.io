@@ -209,7 +209,7 @@ nav p {
     top: min(70px, 15lvw, 15lvh);
     left: clamp(calc(100lvw - 600px), 50lvw, calc(100lvw - 300px));
     width: clamp(300px, 50lvw, 600px);
-    height: clamp(20lvh, 400px, calc(100lvh - 85px));
+    /**height: clamp(20lvh, 400px, calc(100lvh - 85px));**/
     z-index: 8;
     border-radius: 0 0 2px 2px;
     box-shadow: -3px 0px 5px var(--dark-teal);
@@ -290,7 +290,7 @@ nav p {
     text-align: left;
     top: 20lvh;
     left: 3lvw;
-    width: max(40%, min(220px, 100lvw));
+    width: max(50%, min(220px, 100lvw));
   }
 
   .hero-btn {
